@@ -1,0 +1,93 @@
+@import "helpers/vars.scss";
+@import "helpers/fonts.scss";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $font-color;
+  overflow-x: hidden;
+  background-color: #f1f3f6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea {
+  vertical-align: middle;
+}
+
+textarea {
+  resize: none;
+}
+
+section {
+  position: relative;
+}
+
+input,
+select,
+button {
+  outline: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+//Модули
+@import "blocks/blocks.scss";

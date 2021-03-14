@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="static/css/style.min.css">
+</head>
+
+<body class="">
+
+  <main class="page-main">
+
+    <section class="invoices">
+      <div class="invoices__inner">
+        <h2 class="invoices__title">Invoices</h2>
+        <p class="invoices__line"></p>
+      </div>
+
+      <div class="actions">
+        <h3 class="actions__title invoices__subtitle">Actions</h3>
+        <button class="actions__btn invoices__btn">Add new</button>
+      </div>
+
+      <div class="invoices__wrapper">
+        <h3 class="invoices__subtitle">Invoices</h3>
+
+        <table class="invoices__table">
+          <tr class="table-row">
+            <td>Create</td>
+            <td>No</td>
+            <td>Supply</td>
+            <td>Comment</td>
+          </tr>
+        </table>
+
+      </div>
+    </section>
+
+    <section class="create-invoice invoices">
+
+      <button class="create-invoice__close"></button>
+
+      <div class="invoices__inner">
+        <h2 class="invoices__title">Create Invoices</h2>
+        <p class="invoices__line"></p>
+      </div>
+
+      <form class="invoices__form form" action="http://localhost:3001/">
+
+        <div class="form__wrapper">
+          <div class="invoices__field field">
+            <p class="invoices__number">Number:</p>
+            <label class="field__label field__label--icon field__label--settings">
+              <input id="invoices-number" type="text">
+            </label>
+          </div>
+
+          <div class="invoices__field">
+            <p class="invoices__date">Invoice Date:</p>
+            <label class="field__label">
+              <input id="invoices-date" type="date">
+            </label>
+          </div>
+
+          <div class="invoices__field">
+            <p class="supply__date" for="supply-date">Supply Date:</p>
+            <label class="field__label">
+              <input id="supply-date" type="date">
+            </label>
+          </div>
+
+          <div class="invoices__field invoices__textarea">
+            <p class="invoices__comment" for="invoices-comment">Comment:</p>
+            <label class="field__label">
+              <textarea id="invoices-comment"></textarea>
+            </label>
+          </div>
+
+        </div>
+
+        <button type="button" class="invoices__btn form__btn">Save</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <script src="static/js/main.js"></script>
+</body>
+
+</html>
